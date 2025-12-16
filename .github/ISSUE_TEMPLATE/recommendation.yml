@@ -1,0 +1,18 @@
+name: nova recomendação
+description: música, filme, frase ou vibe
+title: "[recomendação]"
+labels: ["suggestion"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: nome (opcional)
+      placeholder: teu nome
+    required: false
+
+  - type: textarea
+    id: content
+    attributes:
+      label: recomendação
+      placeholder: manda a música, filme, frase, mood…
+    required: true
