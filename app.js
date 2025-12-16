@@ -23,6 +23,10 @@ const MOODS = {
       { type: "text", text: "filme: about time (2013)" },
       { type: "text", text: "filme: frances ha (2012)" },
       { type: "text", text: "filme: tá dando onda (2007) (sério)" },
+      { type: "text", text: "filme: the straight story (1999)" },
+      { type: "text", text: "once (2007)" },
+      { type: "text", text: "a vida invísivel (2019) <- meio intankavel mas ok" },
+      { type: "text", text: "petit mamain (2021)" },
 
       // spotify (padronizado: sem /intl-pt e sem ?si=)
       { type: "spotify", url: "https://open.spotify.com/track/1ituIZ0tSIc1timwCxWg3m" },
@@ -57,7 +61,8 @@ const MOODS = {
       { type: "spotify", url: "https://open.spotify.com/track/5vVFqQihO5rGCN7VshfgIR" },
       { type: "spotify", url: "https://open.spotify.com/track/6QtA9isiOb6zymFQAKr5L5" },
       { type: "spotify", url: "https://open.spotify.com/track/4U45aEWtQhrm8A5mxPaFZ7" },
-      { type: "spotify", url: "https://open.spotify.com/intl-pt/track/3tKP05zPWeJGVAhbE96R7H?si=dea6f300ab0e41ee" },
+      { type: "spotify", url: "https://open.spotify.com/track/3tKP05zPWeJGVAhbE96R7H" },
+      { type: "spotify", url: "https://open.spotify.com/track/3tKP05zPWeJGVAhbE96R7H" },      
     ],
   },
 
@@ -333,3 +338,4 @@ function pickRandom(moodKey) {
     moodsDiv.appendChild(btn);
   });
 });
+
