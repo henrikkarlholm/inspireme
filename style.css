@@ -1,0 +1,174 @@
+/* =========================
+   base
+========================= */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f5f6; /* azul acinzentado puxado pro bege */
+  margin: 0;
+  padding: 0;
+}
+
+main, body {
+  min-height: 100vh;
+}
+
+/* =========================
+   texto
+========================= */
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 50px 0 16px;
+  text-transform: lowercase;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  margin: 0 0 22px;
+  color: #222;
+}
+
+/* =========================
+   moods (layout solto)
+========================= */
+
+#moods {
+  display: grid;
+  grid-template-columns: repeat(3, 220px);
+  gap: 18px 26px;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+/* botões */
+#moods button {
+  font-family: Arial, sans-serif;
+  font-size: 19px;
+  padding: 13px 16px;
+  border-radius: 999px;
+  border: 2px solid #000;
+  background: transparent;
+  cursor: pointer;
+  text-transform: lowercase;
+  transition:
+    transform 0.14s ease,
+    background 0.14s ease,
+    box-shadow 0.14s ease;
+}
+
+/* -------------------------
+   offsets (assimetria)
+------------------------- */
+
+#moods button:nth-child(1) {
+  transform: translateY(2px);
+}
+
+#moods button:nth-child(2) {
+  transform: translateY(-4px);
+}
+
+#moods button:nth-child(3) {
+  transform: translateY(1px);
+}
+
+#moods button:nth-child(4) {
+  grid-column: 1;
+  transform: translateX(-12px);
+}
+
+#moods button:nth-child(5) {
+  grid-column: 3;
+  transform: translateX(12px);
+}
+
+/* hover flutuante */
+#moods button:hover {
+  background: #e8ecee;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(40, 50, 60, 0.18);
+}
+
+/* clique */
+#moods button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* =========================
+   resultado
+========================= */
+
+#title,
+#out {
+  text-align: center;
+}
+
+#title {
+  font-size: 20px;
+  margin: 24px 0 6px;
+  font-weight: 700;
+}
+
+#out {
+  font-size: 18px;
+}
+
+/* =========================
+   spotify player
+========================= */
+
+#playerArea {
+  width: min(480px, 92vw);
+  margin: 16px auto 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid #000;
+  background: #f8f9fa;
+}
+
+/* botão spotify */
+#out a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+#out a:hover {
+  background: #e8ecee;
+}
+
+/* =========================
+   mobile
+========================= */
+
+@media (max-width: 560px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  #moods {
+    grid-template-columns: 1fr;
+    width: min(320px, 90vw);
+    margin: 0 auto;
+  }
+
+  #moods button {
+    width: 100%;
+    transform: none !important;
+    grid-column: auto;
+  }
+}
