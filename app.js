@@ -26,7 +26,7 @@ const MOODS = {
       { type: "text", text: "filme: the straight story (1999)" },
       { type: "text", text: "once (2007)" },
       { type: "text", text: "a vida invísivel (2019) <- meio intankavel mas ok" },
-      { type: "text", text: "petit mamain (2021)" },
+      { type: "text", text: "petit maman (2021)" },
 
       // spotify (padronizado: sem /intl-pt e sem ?si=)
       { type: "spotify", url: "https://open.spotify.com/track/1ituIZ0tSIc1timwCxWg3m" },
@@ -62,7 +62,17 @@ const MOODS = {
       { type: "spotify", url: "https://open.spotify.com/track/6QtA9isiOb6zymFQAKr5L5" },
       { type: "spotify", url: "https://open.spotify.com/track/4U45aEWtQhrm8A5mxPaFZ7" },
       { type: "spotify", url: "https://open.spotify.com/track/3tKP05zPWeJGVAhbE96R7H" },
-      { type: "spotify", url: "https://open.spotify.com/track/3tKP05zPWeJGVAhbE96R7H" },      
+      { type: "spotify", url: "https://open.spotify.com/track/3tKP05zPWeJGVAhbE96R7H" }, 
+      { type: "spotify", url: "https://open.spotify.com/track/1sWYVBg7ix2WAq43J9nY7E" },
+      { type: "spotify", url: "https://open.spotify.com/track/5TUmfePkCdoSYSavOykhau" },
+      { type: "spotify", url: "https://open.spotify.com/track/6pHuMjk9O1G3XTTqbnpkTl" },
+      { type: "spotify", url: "https://open.spotify.com/track/5gOnivVq0hLxPvIPC00ZhF" },
+      { type: "spotify", url: "https://open.spotify.com/track/5anmC2NmiEOlfp5ahKxKia" },
+      { type: "spotify", url: "https://open.spotify.com/track/3Fv8KP2lJvWSn7M7W38jag" },
+      { type: "spotify", url: "https://open.spotify.com/track/08T0vbgINtEw2BJYhdfvZB" },
+      { type: "spotify", url: "https://open.spotify.com/track/65krtHkaYLPr0mEbjL61UP" },
+      { type: "spotify", url: "https://open.spotify.com/track/65krtHkaYLPr0mEbjL61UP" },
+      { type: "spotify", url: "https://open.spotify.com/track/0sDqo9UPzPUtu9wEkI3zRB" }, 
     ],
   },
 
@@ -97,6 +107,7 @@ droga: {
     { type: "spotify", url: "https://open.spotify.com/track/1xqT27jSG1Y15vOXfsV0gv" },
     { type: "spotify", url: "https://open.spotify.com/track/6qyS9qBy0mEk3qYaH8mPss" },
     { type: "spotify", url: "https://open.spotify.com/track/3CbF4eluvVhJ9v0axMj2Rk" },
+    { type: "spotify", url: "https://open.spotify.com/track/2FYGZDfsAnNsrm1gVbyKnG" },
       { type: "text", text: "i see you're feeling apocalíptica" },
       { type: "text", text: "calma vei kkkk" },
       { type: "text", text: "eita como gosta de festa" },
@@ -141,6 +152,7 @@ norte: {
     { type: "spotify", url: "https://open.spotify.com/track/5IpKduzyTWSCebGXkfJ2Mm" },
     { type: "spotify", url: "https://open.spotify.com/track/4dBI72rgkmG0gTzswyBTzz" },
     { type: "spotify", url: "https://open.spotify.com/track/7uPmQttafLiJyju14JREY4" },
+    { type: "spotify", url: "https://open.spotify.com/track/6dfhF1BDGmhM69fnCb6wSC" },
 
     { type: "text", text: "filme: the holdovers (2023)" },
     { type: "text", text: "filme: little women (2019)" },
@@ -188,6 +200,8 @@ sul: {
     { type: "spotify", url: "https://open.spotify.com/track/0tTDmG5WqLVc1CPuvuL22Z" },
     { type: "spotify", url: "https://open.spotify.com/track/3bxZhauuIU4ubctdRZwPYW" },
     { type: "spotify", url: "https://open.spotify.com/track/2QGzg5htcf4b0NeSLbi0K6" },
+    { type: "spotify", url: "https://open.spotify.com/track/5TFD2bmFKGhoCRbX61nXY5" },
+    { type: "spotify", url: "https://open.spotify.com/track/6XblFniaIvfdIfuIlD7Ywg" },
 
     { type: "text", text: "bah armandinho é o terror né meu" },
     { type: "text", text: "vou ficar na praia todo dia" },
@@ -240,6 +254,10 @@ sul: {
     { type: "spotify", url: "https://open.spotify.com/track/1UsAjRCSavihMYsspqJz4e" },
     { type: "spotify", url: "https://open.spotify.com/track/7GNJgRUNRACGYH8ySNyqgj" },
     { type: "spotify", url: "https://open.spotify.com/track/6fEjOPaZoxQl3oha9GDJAN" },
+    { type: "spotify", url: "https://open.spotify.com/track/3U4bUBl7zDaAWnTJbQ4Lpl" },
+    { type: "spotify", url: "https://open.spotify.com/track/5WdMBJD7V5CVBTBdE2at2D" },
+    { type: "spotify", url: "https://open.spotify.com/track/4GhtDORJiSRYxj6M1bv0vX" },
+    { type: "spotify", url: "https://open.spotify.com/track/4oup3KfsjiTNmx5LiJSZQf" },
 
     { type: "text", text: "acho que tínhamos que voltar a acreditar que o amor pode mudar o mundo" },
     { type: "text", text: "mais otimismo millennial cringe, menos cinismo!!" },
@@ -338,4 +356,5 @@ function pickRandom(moodKey) {
     moodsDiv.appendChild(btn);
   });
 });
+
 
